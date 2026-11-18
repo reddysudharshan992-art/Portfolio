@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KV Sudharshan Reddy — Aspiring Software Developer</title>
+    <meta
+      name="description"
+      content="Personal portfolio of KV Sudharshan Reddy, a 1st Year B.Tech CSE student at Joy University in collaboration with NIAT/NxtWave and an aspiring software developer."
+    />
+    <meta property="og:title" content="KV Sudharshan Reddy — Aspiring Software Developer" />
+    <meta
+      property="og:description"
+      content="Personal portfolio of KV Sudharshan Reddy, B.Tech CSE student at Joy University (NIAT/NxtWave). Showcasing foundational skills in Python, HTML5, and CSS3."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Plus Jakarta Sans (Headings), DM Sans (Body), JetBrains Mono (Code Previews) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External Stylesheet (Pure CSS3) -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Skip Link for Keyboard Accessibility -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- =========================================================
+         NAVIGATION BAR (Pure HTML5 + CSS3, Zero JavaScript)
+         ========================================================= -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <!-- Zone 1: Brand Wordmark -->
+        <a href="#home" class="brand">KV Sudharshan Reddy</a>
+
+        <!-- Pure CSS Mobile Menu Toggle (No JavaScript Required) -->
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Toggle navigation menu"
+        />
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Zone 2: Navigation Links -->
+        <nav class="site-nav" aria-label="Primary Navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#goals">Goals</a>
+          <!-- Mobile-only Contact link inside dropdown -->
+          <a href="#contact" class="mobile-only-cta">Contact Me</a>
+        </nav>
+
+        <!-- Zone 3: Single Primary Header Action -->
+        <div class="header-action">
+          <a href="#contact" class="btn btn-primary btn-sm">Contact Me</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- =========================================================
+           1. HERO / HOME SECTION
+           ========================================================= -->
+      <section id="home" class="hero section">
+        <div class="container hero-grid">
+          <!-- Left Column: Introduction & Actions -->
+          <div class="hero-content">
+            <p class="hero-kicker">Aspiring Software Developer</p>
+            <h1 class="hero-title">KV Sudharshan Reddy</h1>
+            <p class="hero-subtitle">
+              B.Tech CSE Student <span class="sep" aria-hidden="true">·</span> Python Beginner
+              <span class="sep" aria-hidden="true">·</span> Web Development Enthusiast
+            </p>
+            <p class="hero-intro">
+              I am a first-year Computer Science and Engineering student driven by curiosity for
+              how software works. I am building a strong foundation in Python, HTML5, and CSS3
+              while turning ideas into clean, responsive web pages and practical beginner projects.
+            </p>
+
+            <!-- Primary & Secondary Call-to-Action Buttons -->
+            <div class="hero-actions">
+              <!--
+                CUSTOMIZE CV LINK:
+                Place your PDF resume in your project folder (e.g., resume.pdf)
+                and change href below to href="resume.pdf" with the download attribute.
+              -->
+              <a
+                href="mailto:reddysudharshan992@gmail.com?subject=Request%20for%20CV%20-%20KV%20Sudharshan%20Reddy"
+                class="btn btn-primary"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Download CV
+              </a>
+
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+
+            <!-- Social Links (Update href with your real GitHub & LinkedIn URLs) -->
+            <div class="hero-socials" aria-label="Social Media Profiles">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="GitHub Profile"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  />
+                </svg>
+                <span>GitHub</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="LinkedIn Profile"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Professional Profile Portrait -->
+          <div class="hero-media">
+            <div class="portrait-frame">
+              <!--
+                PROFILE PHOTO:
+                In VS Code, save your photo as "images/profile.jpg" (or "profile.jpg")
+                and update the src attribute below to src="images/profile.jpg".
+              -->
+              <img
+                src="/assets/aistudio/Professional_Portrait_with_Soft_Bokeh_Background_a1f35aac.png"
+                alt="Portrait of KV Sudharshan Reddy"
+                class="portrait-img"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           2. ABOUT ME SECTION
+           ========================================================= -->
+      <section id="about" class="section section-alt">
+        <div class="container">
+          <div class="about-layout">
+            <div class="section-header">
+              <p class="section-kicker">About Me</p>
+              <h2 class="section-title">Building strong fundamentals from day one.</h2>
+              <p class="about-meta">
+                B.Tech CSE · 1st Year<br />
+                Joy University × NIAT / NxtWave
+              </p>
+            </div>
+
+            <div class="about-body">
+              <p>
+                Hello! I am <strong>KV Sudharshan Reddy</strong>, a first-year
+                <strong>B.Tech Computer Science and Engineering (CSE)</strong> student at
+                <strong>Joy University</strong> in collaboration with
+                <strong>NIAT / NxtWave</strong>.
+              </p>
+              <p>
+                I am deeply passionate about programming and technology. Right now, I am focused on
+                learning <strong>Python</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>,
+                and the core principles of modern web development through hands-on practice.
+              </p>
+              <p>
+                I enjoy developing creative and useful projects, exploring new technologies, and
+                steadily sharpening my problem-solving abilities. My long-term goal is to grow into
+                a skilled, dependable professional software developer who builds meaningful
+                real-world software.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           3. SKILLS SECTION
+           ========================================================= -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-header section-header-wide">
+            <p class="section-kicker">Technical Skills</p>
+            <h2 class="section-title">Current toolkit and foundational strengths.</h2>
+            <p class="section-lead">
+              An honest overview of the technologies and core computer science areas I am actively
+              studying and practicing in my first year.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Skill 1: Python -->
+            <article class="glass-card skill-card">
+              <div class="skill-top">
+                <div class="skill-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                </div>
+                <span class="skill-level">Beginner</span>
+              </div>
+              <h3 class="card-title">Python</h3>
+              <p class="card-desc">
+                Writing beginner-level scripts, practicing variables, loops, functions, conditionals,
+                and foundational logic exercises.
+              </p>
+              <div class="skill-meter" aria-label="Skill progression: Beginner">
+                <span class="skill-meter-fill level-beginner"></span>
+              </div>
+            </article>
+
+            <!-- Skill 2: HTML5 -->
+            <article class="glass-card skill-card">
+              <div class="skill-top">
+                <div class="skill-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="8" y1="13" x2="16" y2="13" />
+                    <line x1="8" y1="17" x2="13" y2="17" />
+                  </svg>
+                </div>
+                <span class="skill-level">Foundational</span>
+              </div>
+              <h3 class="card-title">HTML5</h3>
+              <p class="card-desc">
+                Structuring clean, accessible webpages using semantic HTML5 landmarks, headings,
+                forms, and well-organized document hierarchy.
+              </p>
+              <div class="skill-meter" aria-label="Skill progression: Foundational">
+                <span class="skill-meter-fill level-foundational"></span>
+              </div>
+            </article>
+
+            <!-- Skill 3: CSS3 -->
+            <article class="glass-card skill-card">
+              <div class="skill-top">
+                <div class="skill-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                    <line x1="3" y1="9" x2="21" y2="9" />
+                    <line x1="9" y1="21" x2="9" y2="9" />
+                  </svg>
+                </div>
+                <span class="skill-level">Foundational</span>
+              </div>
+              <h3 class="card-title">CSS3</h3>
+              <p class="card-desc">
+                Styling responsive interfaces with Flexbox, CSS Grid, custom properties, clean
+                typography, transitions, and media queries.
+              </p>
+              <div class="skill-meter" aria-label="Skill progression: Foundational">
+                <span class="skill-meter-fill level-foundational"></span>
+              </div>
+            </article>
+
+            <!-- Skill 4: Basic Web Development -->
+            <article class="glass-card skill-card">
+              <div class="skill-top">
+                <div class="skill-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    />
+                  </svg>
+                </div>
+                <span class="skill-level">Learning</span>
+              </div>
+              <h3 class="card-title">Basic Web Development</h3>
+              <p class="card-desc">
+                Building static, mobile-friendly websites from scratch and understanding how modern
+                web layouts adapt across screen sizes.
+              </p>
+              <div class="skill-meter" aria-label="Skill progression: Learning">
+                <span class="skill-meter-fill level-learning"></span>
+              </div>
+            </article>
+
+            <!-- Skill 5: Computer Science Fundamentals -->
+            <article class="glass-card skill-card">
+              <div class="skill-top">
+                <div class="skill-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+                    <rect x="9" y="9" width="6" height="6" />
+                    <line x1="9" y1="1" x2="9" y2="4" />
+                    <line x1="15" y1="1" x2="15" y2="4" />
+                    <line x1="9" y1="20" x2="9" y2="23" />
+                    <line x1="15" y1="20" x2="15" y2="23" />
+                    <line x1="20" y1="9" x2="23" y2="9" />
+                    <line x1="20" y1="14" x2="23" y2="14" />
+                    <line x1="1" y1="9" x2="4" y2="9" />
+                    <line x1="1" y1="14" x2="4" y2="14" />
+                  </svg>
+                </div>
+                <span class="skill-level">Core Study</span>
+              </div>
+              <h3 class="card-title">Computer Science Fundamentals</h3>
+              <p class="card-desc">
+                Studying programming logic, computational thinking, and core engineering concepts as
+                part of the B.Tech CSE curriculum.
+              </p>
+              <div class="skill-meter" aria-label="Skill progression: Core Study">
+                <span class="skill-meter-fill level-learning"></span>
+              </div>
+            </article>
+
+            <!-- Skill 6: Problem Solving -->
+            <article class="glass-card skill-card">
+              <div class="skill-top">
+                <div class="skill-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                    <line x1="12" y1="17" x2="12.01" y2="17" />
+                  </svg>
+                </div>
+                <span class="skill-level">Developing</span>
+              </div>
+              <h3 class="card-title">Problem Solving</h3>
+              <p class="card-desc">
+                Breaking down coding exercises into clear, step-by-step solutions and improving
+                analytical thinking through daily practice.
+              </p>
+              <div class="skill-meter" aria-label="Skill progression: Developing">
+                <span class="skill-meter-fill level-learning"></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           4. PROJECTS SECTION
+           ========================================================= -->
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <div class="section-header section-header-wide">
+            <p class="section-kicker">Projects</p>
+            <h2 class="section-title">Practice builds and learning milestones.</h2>
+            <p class="section-lead">
+              Projects created while learning web layout design and beginner Python programming.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="glass-card project-card">
+              <!--
+                PROJECT IMAGE PLACEHOLDER:
+                To replace this clean CSS mockup with a screenshot, swap the div below with:
+                <img src="images/project-portfolio.png" alt="Personal Portfolio Website preview" class="project-img" />
+              -->
+              <div class="project-preview preview-portfolio" aria-hidden="true">
+                <div class="preview-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="preview-canvas">
+                  <div class="preview-hero-lines">
+                    <div class="line line-accent"></div>
+                    <div class="line line-lg"></div>
+                    <div class="line line-md"></div>
+                  </div>
+                  <div class="preview-avatar-box"></div>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <p class="project-tech">HTML5 <span aria-hidden="true">·</span> CSS3</p>
+                <h3 class="card-title">Personal Portfolio Website</h3>
+                <p class="card-desc">
+                  A personal website designed to present my academic profile, foundational skills,
+                  learning projects, and contact details with a responsive layout.
+                </p>
+                <div class="project-footer">
+                  <!-- Update href with your actual GitHub repository URL once uploaded -->
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                  >
+                    <svg
+                      class="icon-sm"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                    GitHub Repository
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="glass-card project-card">
+              <!--
+                PROJECT IMAGE PLACEHOLDER:
+                Swap with <img src="images/project-python.png" alt="Python Programming Projects preview" class="project-img" />
+              -->
+              <div class="project-preview preview-python" aria-hidden="true">
+                <div class="preview-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="preview-code">
+                  <code><span class="code-kw">def</span> solve(n):</code>
+                  <code>&nbsp;&nbsp;<span class="code-kw">return</span> sum(range(n))</code>
+                  <code><span class="code-fn">print</span>(solve(10))</code>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <p class="project-tech">Python</p>
+                <h3 class="card-title">Python Programming Projects</h3>
+                <p class="card-desc">
+                  A growing collection of beginner-level Python programs and structured coding
+                  exercises focused on logic building, loops, and functions.
+                </p>
+                <div class="project-footer">
+                  <!-- Update href with your actual GitHub repository URL once uploaded -->
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                  >
+                    <svg
+                      class="icon-sm"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                    GitHub Repository
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="glass-card project-card">
+              <!--
+                PROJECT IMAGE PLACEHOLDER:
+                Swap with <img src="images/project-landing.png" alt="Responsive Landing Page preview" class="project-img" />
+              -->
+              <div class="project-preview preview-landing" aria-hidden="true">
+                <div class="preview-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="preview-grid-mock">
+                  <div class="mock-banner"></div>
+                  <div class="mock-cols">
+                    <div class="mock-col"></div>
+                    <div class="mock-col"></div>
+                    <div class="mock-col"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <p class="project-tech">HTML5 <span aria-hidden="true">·</span> CSS3</p>
+                <h3 class="card-title">Responsive Landing Page</h3>
+                <p class="card-desc">
+                  A simple, modern webpage built to practice responsive CSS Grid and Flexbox
+                  layouts that adapt cleanly across mobile, tablet, and desktop screens.
+                </p>
+                <div class="project-footer">
+                  <!-- Update href with your actual GitHub repository URL once uploaded -->
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                  >
+                    <svg
+                      class="icon-sm"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                    GitHub Repository
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           5. EDUCATION SECTION
+           ========================================================= -->
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-header section-header-wide">
+            <p class="section-kicker">Education</p>
+            <h2 class="section-title">Academic background.</h2>
+          </div>
+
+          <article class="glass-card education-card">
+            <div class="education-main">
+              <p class="education-status">Currently Pursuing — 1st Year</p>
+              <h3 class="education-degree">Bachelor of Technology (B.Tech)</h3>
+              <p class="education-branch">Computer Science and Engineering (CSE)</p>
+            </div>
+
+            <dl class="education-details">
+              <div class="detail-item">
+                <dt>Institution</dt>
+                <dd>Joy University</dd>
+              </div>
+              <div class="detail-item">
+                <dt>Academic Collaboration</dt>
+                <dd>NIAT / NxtWave</dd>
+              </div>
+              <div class="detail-item">
+                <dt>Current Status</dt>
+                <dd>1st Year Undergraduate</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           6. CAREER GOALS SECTION
+           ========================================================= -->
+      <section id="goals" class="section section-alt">
+        <div class="container">
+          <div class="section-header section-header-wide">
+            <p class="section-kicker">Career Goals</p>
+            <h2 class="section-title">Where I am heading next.</h2>
+            <p class="section-lead">
+              Clear, steady milestones guiding my transition from first-year student to software
+              engineer.
+            </p>
+          </div>
+
+          <ol class="goals-list">
+            <li class="goal-item">
+              <span class="goal-num">01</span>
+              <div class="goal-text">
+                <h3>Become a professional software developer</h3>
+                <p>
+                  Build the engineering discipline, coding habits, and technical depth needed to
+                  contribute to production software teams.
+                </p>
+              </div>
+            </li>
+
+            <li class="goal-item">
+              <span class="goal-num">02</span>
+              <div class="goal-text">
+                <h3>Improve programming and technical skills</h3>
+                <p>
+                  Strengthen Python fluency, data structures, and algorithmic problem solving
+                  through consistent daily coding practice.
+                </p>
+              </div>
+            </li>
+
+            <li class="goal-item">
+              <span class="goal-num">03</span>
+              <div class="goal-text">
+                <h3>Build real-world projects</h3>
+                <p>
+                  Move beyond classroom exercises by designing and shipping practical applications
+                  that solve everyday problems cleanly.
+                </p>
+              </div>
+            </li>
+
+            <li class="goal-item">
+              <span class="goal-num">04</span>
+              <div class="goal-text">
+                <h3>Learn modern web development technologies</h3>
+                <p>
+                  Expand from HTML5 and CSS3 into JavaScript, frontend frameworks, version control,
+                  and backend fundamentals.
+                </p>
+              </div>
+            </li>
+
+            <li class="goal-item">
+              <span class="goal-num">05</span>
+              <div class="goal-text">
+                <h3>Gain practical industry experience</h3>
+                <p>
+                  Seek internships, collaborative student projects, and mentorship opportunities to
+                  learn how engineering teams deliver software.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           7. CONTACT SECTION
+           ========================================================= -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="glass-card contact-card">
+            <p class="section-kicker">Contact</p>
+            <h2 class="section-title">Let’s connect.</h2>
+            <p class="contact-message">
+              I am always open to connecting with fellow students, mentors, and teams for learning
+              opportunities, collaborations, or beginner internships. Feel free to reach out
+              directly via email.
+            </p>
+
+            <p class="contact-email">reddysudharshan992@gmail.com</p>
+
+            <div class="contact-actions">
+              <a
+                href="mailto:reddysudharshan992@gmail.com?subject=Hello%20KV%20Sudharshan%20Reddy"
+                class="btn btn-primary"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                Send Email
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+         8. FOOTER
+         ========================================================= -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">© 2026 KV Sudharshan Reddy. Built with HTML5 &amp; CSS3.</p>
+        <div class="footer-links">
+          <a href="#home">Back to top</a>
+          <span class="sep" aria-hidden="true">·</span>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span class="sep" aria-hidden="true">·</span>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
